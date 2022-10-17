@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #19a2ae;
+  position: relative;
+}
+
+.card {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.cover-photo {
+  width: 100%;
+  min-height: 8rem;
+  background-image: url(./images/bg-pattern-card.svg);
+  background-size: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.user-details {
+  margin-top: -3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.profile-picture {
+  background-image: url(./images/image-victor.jpg);
+  background-size: cover;
+  width: 6rem;
+  min-height: 6rem;
+  border-radius: 99px;
+  border: 0.32rem solid #fff;
+}
+
+.user-info {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.66rem;
+}
+
+.statistics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-top: 1px solid #9696964f;
+  margin-top: 2rem;
+}
+
+.followers, .likes, .photos {
+    width: 6rem;
+}
+
+.statistics p {
+  font-size: 14px;
+}
+
+p {
+  font-weight: 400;
+  color: #6a6f81;
+}
+
+span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d3248;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    padding: 0 2rem;
+  }
+  .card {
+    width: 100%;
+  }
+}
