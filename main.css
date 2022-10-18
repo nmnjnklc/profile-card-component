@@ -12,7 +12,11 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #19a2ae;
-  position: relative;
+  background-image: url(./images/bg-pattern-top.svg),
+                    url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 52vw bottom 35vh, 
+                       left 48vw top 52vh;
 }
 
 .card {
@@ -63,8 +67,10 @@ body {
   margin-top: 2rem;
 }
 
-.followers, .likes, .photos {
-    width: 6rem;
+.followers,
+.likes,
+.photos {
+  width: 6rem;
 }
 
 .statistics p {
